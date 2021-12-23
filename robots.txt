@@ -1,0 +1,8 @@
+sitemap: https://cursist17.reacollege.eu/eindopdracht-css/sitemap.xml
+
+user-agent: *
+Disallow: /contact-if.html
+Disallow: /menu-if.html
+Disallow: /over-ons-if.html
+Disallow: /start.tml
+Disallow: /sfeer.html

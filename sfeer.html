@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <link
+      rel="canonical"
+      href="https://cursist17.reacollege.eu/eindopdracht-css/index.html"
+    />
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <link
+      rel="stylesheet/less"
+      media="screen and (min-width: 481px) and (max-width: 768px)"
+      type="text/css"
+      href="css/styles-tb.less"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M8TEL3KN0Z"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-M8TEL3KN0Z");
+    </script>
+    <title>sfeer</title>
+  </head>
+
+  <body>
+    <div class="sfeer-container">
+      <div class="slide">
+        <figure>
+          <img
+            class="mySlides"
+            src="images/Lunch-2.jpg"
+            height="250"
+            width="350"
+          />
+
+          <img
+            class="mySlides"
+            src="images/header-img.jpg"
+            height="250"
+            width="350"
+          />
+
+          <img
+            class="mySlides"
+            src="images/food.jpg"
+            height="250"
+            width="350"
+          />
+        </figure>
+      </div>
+    </div>
+    <!-- Script op internet gevonden. Niet zelf gemaakt, weet wel wat het betekend -->
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+    </script>
+  </body>
+</html>
